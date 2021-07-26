@@ -109,7 +109,7 @@ window.onload = colorSlot();
 var task = $(this).siblings(".tasklog").val()
 var taskLog = $(this).siblings(".hour").text()
 localStorage.setItem(taskLog, task)
-})
+});
 
 
 
