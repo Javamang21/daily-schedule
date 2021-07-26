@@ -105,20 +105,20 @@ window.onload = colorSlot();
 
 // creating an eventlistener that saves the user inputs everytime they click the save button after adding a task. Then we save it to local storage so that the user can refreesh the page and still keep there task.
     
-$(".saveBtn").on("click", function(){
-var task = $(this).siblings(".tasklog").val();
-var taskLog = $(this).siblings(".hour").text();
-localStorage.setItem(taskLog, task);
-});
+    $(".saveBtn").on("click", function(){
+var task = $(this).siblings(".tasklog").val()
+var taskLog = $(this).siblings(".hour").text()
+localStorage.setItem(taskLog, task)
+})
 
 
 
-$("#nineam .tasklog").val(localStorage.getItem("9 AM"))
-$("#tenam .tasklog").val(localStorage.getItem("10 AM"))
-$("#elevenam .tasklog").val(localStorage.getItem("11 AM"))
-$("#twelvepm .tasklog").val(localStorage.getItem("12 PM"))
-$("#onepm .tasklog").val(localStorage.getItem("1 PM"))
-$("#twopm .tasklog").val(localStorage.getItem("2 PM"))
-$("#threepm .tasklog").val(localStorage.getItem("3 PM"))
-$("#fourpm .tasklog").val(localStorage.getItem("4 PM"))
-$("#fivepm .tasklog").val(localStorage.getItem("5 PM"))
+$("#hour1 .tasklog").val(localStorage.getItem("9 AM"))
+$("#hour2 .tasklog").val(localStorage.getItem("10 AM"))
+$("#hour3 .tasklog").val(localStorage.getItem("11 AM"))
+$("#hour4 .tasklog").val(localStorage.getItem("12 PM"))
+$("#hour5 .tasklog").val(localStorage.getItem("1 PM"))
+$("#hour6 .tasklog").val(localStorage.getItem("2 PM"))
+$("#hour7 .tasklog").val(localStorage.getItem("3 PM"))
+$("#hour8 .tasklog").val(localStorage.getItem("4 PM"))
+$("#hour9 .tasklog").val(localStorage.getItem("5 PM"))
